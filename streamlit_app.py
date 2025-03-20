@@ -244,10 +244,6 @@ st.set_page_config(
     layout="wide"
 )
 
-with open('styles/custom.css') as f:
-    st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
-
-
 page = st.sidebar.radio("Navigate to", ["Sales Analysis", "Sales Predictions"])
 
 st.title("Get Sales Insights & Recommendations")
